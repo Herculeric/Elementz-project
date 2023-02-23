@@ -92,9 +92,9 @@ data = FeatureDataset(r"C:\Users\ASUS\Desktop\Data collection\Book1.xlsx")
 train = FeatureDataset1(r"C:\Users\ASUS\Desktop\Data collection\Book2.xlsx")
 x_1 = data.X_train
 y_1 = data.Y_train
-initial_w = [1.70049477, -3.05329173, 2.74204789, 0.91475109,
-             -0.66810372, 0.23088642, 0.25121244, -1.92206668, 0.14189437, 0.12458069]
-initial_b = 43.572994232177734
+initial_w = [0, 0, 0, 0,
+             0, 0, 0, 0, 0, 0]
+initial_b = 0
 iterations = 1000
 alpha_1 = 0.01
 w_final, b_final, J_hist = gradient_descent(x_1, y_1, initial_w, initial_b,
