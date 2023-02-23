@@ -3,9 +3,9 @@ from openpyxl import Workbook, load_workbook
 
 #Variables
 first_idx = 1
-last_idx = 2000
+last_idx = 1000
 column_to_write = 21 #Column "A" is 1, "B" is 2... "Z" is 26
-file_name = r"C:\Users\ASUS\Desktop\Data collection\tracks - 30000 - 31999.xlsx"
+file_name = r"C:\Users\ASUS\Desktop\Data collection\tracks.xlsx"
 #Functions
 def returnGenres(id):
     try:
@@ -65,6 +65,6 @@ for idx in range(len(resList)):
     print(f"Written Progress => ({idx}/{last_idx}), Row Index: {row_write}, Pop Song: {genre_write}")
 
 print("Saving data onto worksheet... May take awhile...")
-wb_write.save(r"C:\Users\ASUS\Desktop\Data collection\tracks - 30000 - 31999.xlsx")
+wb_write.save(r"C:\Users\ASUS\Desktop\Data collection\tracks.xlsx")
 
 print("Data Saved, Process Complete. Exiting...")
